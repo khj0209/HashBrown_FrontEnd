@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 import './App.css';
+import React, {Component} from 'react';
+import FirstPage from './component/FirstPage';
+
 
 // 첫 번째 페이지 컴포넌트
-const FirstPage = () => {
+/*const FirstPage = () => {
   return (
     <div className="container" style={{backgroundImage: "url(https://www.hana.hs.kr/assets/images/intro/school_11.jpg)"}}>
       <div className="buttons">
@@ -16,11 +19,11 @@ const FirstPage = () => {
       </div>
     </div>
   );
-};
+};*/
 
 
 // 두 번째 페이지 (택배 등록 페이지)
-const SecondPage = () => {
+/*const SecondPage = () => {
   const [company, setCompany] = useState('');
   const [name, setName] = useState('');
   const [room, setRoom] = useState('');
@@ -107,9 +110,11 @@ const HomeButton = () => {
     </div>
   );
 };
+*/
 
 function App() {
   return (
+    <div>
     <Router>
       <HomeButton />
       <Routes>
@@ -118,6 +123,9 @@ function App() {
         <Route path="/receive" element={<SecondPage />} />
       </Routes>
     </Router>
+
+    <FirstPage />
+    </ div>
   );
 }
 
