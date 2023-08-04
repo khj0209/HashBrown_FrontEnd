@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 import './App.css';
 import React, {Component} from 'react';
-import FirstPage from './component/FirstPage';
+import FirstPage from './src/component/FirstPage';
 
 
 // 첫 번째 페이지 컴포넌트
