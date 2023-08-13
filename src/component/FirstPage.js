@@ -4,16 +4,13 @@ import { styled } from '@mui/material/styles';
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import Homebutton from './Button/HomeButton';
-
-
 //등록,수령버튼 위치조정
 const CenteredButtonsContainer = styled('div')({
   display: 'flex',
   flexDirection: 'row',
   alignItems: 'center',
   justifyContent: 'space-around',
-  height: '90vh',
+  height: '90vh'
 })
 //버튼 스타일
 const LargeButton = styled(Button)({
@@ -33,16 +30,9 @@ const FirstPage = () =>{
       <LargeButton variant="contained" size="large">수령</LargeButton>
     </Link>
     </CenteredButtonsContainer>
-    
+  </div>
 
-    <Homebutton></Homebutton>
-    </div>
-    
-  
- 
   );
 }
 
 export default FirstPage;
-
-
