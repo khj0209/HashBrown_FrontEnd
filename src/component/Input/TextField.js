@@ -1,10 +1,30 @@
-import * as React from 'react';
+import React, { useState } from 'react';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 
+
+
 export default function FormPropsTextFields() {
+  const [name, setName] = useState('');
+  const handleNameChange = (event) => {setName(event.target.value);};
+
+  const handleAddItem = () => {
+    if (itemName.trim() !== '') {
+      setItems([...items, itemName]);
+      setItemName('');
+    }
+  };
+
+  const handleNameChange = (index, event) => {
+    const updatedItems = [...items];
+    updatedItems[index] = event.target.value;
+    setItems(updatedItems);
+  };
+
+
+
   return (
-    <Box
+    /*<Box
       component="form"
       sx={{
         '& .MuiTextField-root': { m: 1, width: '25ch' },
@@ -16,8 +36,11 @@ export default function FormPropsTextFields() {
           required
           id="outlined-required"
           label="이름"
+          value={name}
+          onChange ={handleNameChange}
           //defaultValue="Hello World"
         />
+        <li>{name}</li>
 
 
      <TextField
@@ -27,5 +50,10 @@ export default function FormPropsTextFields() {
           //defaultValue="예)B705"
         />
 
-    </Box>
+    </Box>*/
+
+    <form>
+      <input type="text" value={name} onChange={handleNameChange} />
+      <button type ='submit'>추가</button>
+    </form>
   )}
