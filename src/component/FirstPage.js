@@ -1,38 +1,23 @@
-// 첫 번째 페이지 컴포넌트
-import Button from '@mui/material/Button';  
-import { styled } from '@mui/material/styles';
 import React from 'react';
-import { Link } from 'react-router-dom';
+import First_RegisterButton from './Button/First_RegisterButton';
+import First_RecieveButton from './Button/First_RecieveButton';
 
-//등록,수령버튼 위치조정
-const CenteredButtonsContainer = styled('div')({
-  display: 'flex',
-  flexDirection: 'row',
-  alignItems: 'center',
-  justifyContent: 'space-around',
-  height: '90vh'
-})
-//버튼 스타일
-const LargeButton = styled(Button)({
-  width: '300%', // Make the button take the full width of its container
-  height: '10rem', // Adjust this value to control the button's size
-  marginBottom: '1rem', // Add spacing between buttons
-});
+// 첫번째 페이지 컴포넌트
+const FirstPage = () => {
+  return (
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh'}}>
+        {/*flexbow를 사용하여 내부 요소를 수평 정렬하고, 중앙에 배치 */}
 
-const FirstPage = () =>{
-  return(
-  <div>
-    <CenteredButtonsContainer>
-    <Link to='/RegisterPage'>
-      <LargeButton variant="contained" size="large">등록</LargeButton>
-    </Link>
-    <Link to='/RecievePage'>
-      <LargeButton variant="contained" size="large">수령</LargeButton>
-    </Link>
-    </CenteredButtonsContainer>
-  </div>
+        <First_RegisterButton />
+        {/*택배 등록 버튼 컴포넌트*/}
 
+        <div style={{ width: '490px'}}/>
+        {/* 두 버튼 사이의 간격을 조정하기 위한 빈 div*/}
+
+        <First_RecieveButton />
+        {/*택배 수령 버튼 컴포넌트*/}
+    </div>
   );
-}
+};
 
 export default FirstPage;
