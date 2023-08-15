@@ -16,7 +16,7 @@ const NameRoomInput = ({
             display: 'flex', // Flexbox 사용으로 가로 정렬
             justifyContent: 'center', // 중앙 정렬
           '& .MuiTextField-root': { m: 1, width: '25ch' }, // 입력 필드 스타일
-          marginTop: '23px' // 상단 마진
+          marginTop: '10px' // 상단 마진
         }}
         noValidate // 유효성 검사 비활성화
         autoComplete="off" // 자동 완성 비활성화

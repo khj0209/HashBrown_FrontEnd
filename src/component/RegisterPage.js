@@ -4,6 +4,7 @@ import CompButton from './Button/CompButton';
 import NameRoomInput from './Input/NameRoomInput';
 import RegisterList from './List/RegisterList';
 import PlusButton from  './Button/PlusButton';
+import RegisterButton from './Button/RegisterButton';
 
 function RegisterPage() {
   // 상태 관리
@@ -80,6 +81,8 @@ function RegisterPage() {
       toggleSelected={toggleSelectedItem}
       removeSelectedItems= {removeSelectedItems}
       /> {/*등록된 리스트 표시*/}
+      
+      <RegisterButton/>
     </div>
   );
 };

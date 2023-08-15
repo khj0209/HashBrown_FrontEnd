@@ -62,7 +62,6 @@ const RecieveList = ({ searchFilter }) => {
         <TableBody>
         {filteredData.map((row, index)=> (
             <TableRow key={index}>
-                {/* 행 데이터 표시 */}
               <TableCell align="center" component="th" scope="row">
                 {row.name}
               </TableCell>
@@ -71,7 +70,6 @@ const RecieveList = ({ searchFilter }) => {
               <TableCell align="center">{row.dateTime}</TableCell>
               <TableCell align="center">
                 <RecieveButton found={row.found} onClick={() => handleFoundClick(index)} />
-               {/* 수령 버튼 */}
               </TableCell>
             </TableRow>
         ))}

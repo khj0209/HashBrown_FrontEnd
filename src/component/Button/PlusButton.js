@@ -9,7 +9,7 @@ const PlusButton = ({Add}) => { // Add 함수를 props로 받음
     variant="contained" // 버튼 스타일
     style ={{ 
       backgroundColor: '#339999', // 배경색 설정
-      marginTop: '23px' // 상단 마진 설정
+      marginTop: '15px' // 상단 마진 설정
     }}
     onClick={Add}> {/* 클릭 시 Add 함수 호출*/}
       <AddIcon /> {/*'+' 아이콘 표시*/}

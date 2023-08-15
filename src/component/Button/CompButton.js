@@ -48,7 +48,8 @@ function CompButton({ onAddComp, selectedIndex }) {
       <Button
         variant="contained"
         style ={{
-            backgroundColor: '#339999'
+            backgroundColor: '#339999',
+            marginTop: '0px'
         }}
         color="primary"
         endIcon={<ArrowDropDownIcon />}

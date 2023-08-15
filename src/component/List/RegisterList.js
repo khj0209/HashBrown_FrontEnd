@@ -7,8 +7,8 @@ const RegisterList = ({ List, onRemove, selectedItems, toggleSelected, removeSel
 
 
   return (
-    <Paper style={{ width: '50%', margin: 'auto', marginTop: '60px'}}>
-      <div style={{ maxHeight: '550px', overflow: 'auto' }}> 
+    <Paper style={{ width: '50%', margin: 'auto', marginTop: '40px'}}>
+      <div style={{ maxHeight: '450px', overflow: 'auto' }}> 
       {/*스크롤 가능한 테이블을 위한 div*/}
       
       <Table stickyHeader>
